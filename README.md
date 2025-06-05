@@ -90,7 +90,21 @@ In the project directory, you can run:
 
 - `npm run dev` or `yarn dev` - Starts the development server
 - `npm run build:web` or `yarn build:web` - Builds the app for web deployment
+- `npm run build:ios` or `yarn build:ios` - Generates a production iOS build
 - `npm run lint` or `yarn lint` - Runs the linter to check for code issues
+
+### Building for iOS
+
+Use the provided script to generate an iOS build with EAS:
+
+```bash
+npm run build:ios
+```
+
+This command uploads the project to Expo Application Services and generates an
+`.ipa` file you can submit to TestFlight or the App Store. Ensure you have set
+up your Apple developer credentials with `eas credentials` before running the
+build.
 
 ## Development
 
